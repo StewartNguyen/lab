@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="Demonstrates some basic HTML form elements" />
+  <meta name="keywords" content="HTML, Form, tags" />
+  <meta name="author" content="A Lecturer"  />
+  <title>HTML Form Example</title>
+</head>
+<body>
+  <form action="">
+     <a href="http://swin.edu.au"> <img src="./logo.png" alt="http://swin.edu.au"> </a> 
+<h1>CWA Help Desk Appointment</h1>
+<p>The help desk is located at ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+<p>Check Blackboard for when CWA tutors will be there.</p>
+<fieldset>
+  <legend>Student details</legend>
+  <p><label for="student_id">Student ID   
+    <input type="text" id="student_id" pattern="[7-10]" require="required"/> 
+  </label></p>
+  
+  <p><label for="given_name">Given Name
+    <input type="text" id="given_name" pattern="^[a-zA-Z ]+$" maxlength="15" />
+  </label>
+  <label for="family_name">Family Name
+<input type="text" id="family_name" pattern="^[a-zA-Z ]+$">
+  </label></p>
+</fieldset>
+<fieldset>
+<legend>Your Unit</legend>
+<p><label><input type="radio" name="unit" value="10011" required="required"/> COS10011 </label>
+<label><input type="radio" name="unit" value="60004">  COS60004 </label>
+<label><input type="radio" name="unit" value="60007">  COS60007 </label></p>
+
+<label for="tutor">Your tutor:</label>
+<select name="tutor" id="tutor">
+<option value="" required="required" >Please select</option>
+</select>
+</fieldset>
+<fieldset>
+<legend>Issue</legend>
+<p><label>HTML  <input type="checkbox" checked="checked">  </label>
+<label>CSS  <input type="checkbox">  </label>
+<label>JavaScript  <input type="checkbox" >  </label>
+<label>PHP  <input type="checkbox" >  </label>
+<label>MySQL  <input type="checkbox" >  </label>
+</p>
+<p><label>Description of issue <br/> <textarea name="description" rows="5" cols="20">Write description of your problem here </textarea> </label></p>
+</fieldset>
+<fieldset>
+  <legend>Preffered Date/Time</legend>
+  <label>Date <input type="text" placeholder="dd/mm/yyyy"></label>
+  <br>
+  <br>
+  <label>Time <input type="text" placeholder="00:00"></label>
+</fieldset>
+<br>
+<br>
+<p><input type="submit" value="Book">
+<input type="reset" value="Reset"></p>
+</form>
+</body>
+</html>
