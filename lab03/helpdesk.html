@@ -16,7 +16,7 @@
 <fieldset>
   <legend>Student details</legend>
   <p><label for="student_id">Student ID   
-    <input type="text" id="student_id" pattern="[7-10]" require="required"/> 
+    <input type="text" id="student_id" pattern="[7-10]" required="required"/> 
   </label></p>
   
   <p><label for="given_name">Given Name
@@ -49,10 +49,10 @@
 </fieldset>
 <fieldset>
   <legend>Preffered Date/Time</legend>
-  <label>Date <input type="text" placeholder="dd/mm/yyyy"></label>
+  <label>Date <input type="text" placeholder="dd/mm/yyyy" pattern="\d{1,2}\/\d{1,2}\/\d{4}"></label>
   <br>
   <br>
-  <label>Time <input type="text" placeholder="00:00"></label>
+  <label>Time <input type="text" placeholder="00:00" pattern="\d{2}:\d{2}"></label>
 </fieldset>
 <br>
 <br>
